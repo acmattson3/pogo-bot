@@ -93,6 +93,9 @@ default definition to match your own captured templates.
 from dataclasses import dataclass
 from typing import Dict, Tuple
 
+# Constants
+PKG = "com.nianticlabs.pokemongo"
+ACTIVITY = "com.nianticproject.holoholo.libholoholo.unity.UnityMainActivity"
 
 @dataclass(frozen=True)
 class Locator:

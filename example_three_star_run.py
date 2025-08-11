@@ -4,6 +4,6 @@ from pogo_config import default_pack
 from pogo_states import tag_three_star_pass
 
 if __name__ == "__main__":
-    cfg = default_pack("./assets")  # replace with your assets folder
+    cfg = default_pack("./pogo_assets/Images")  # replace with your assets folder
     with ShellSession() as sh, PngStream() as ps:
         tag_three_star_pass(cfg, sh, ps)

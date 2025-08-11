@@ -1,3 +1,6 @@
 ### Cloned repositories ###
 # https://github.com/PokeMiners/pogo_assets/
 pogo_assets/
+
+### Local Files ###
+__pycache__/

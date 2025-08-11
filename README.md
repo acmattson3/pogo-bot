@@ -12,3 +12,10 @@ git sparse-checkout init --cone
 git sparse-checkout set Images
 git checkout
 ```
+
+Then, optionally, create and enter a conda environment for the bot (requires anaconda) and install the dependencies:
+```
+conda env create -f environment.yml
+conda activate pogo-bot
+```
+Or, just do it however you want!
