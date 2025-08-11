@@ -346,7 +346,7 @@ class UiPack:
     sig_rects: SignatureRects
 
 
-def default_pack(asset_dir: str = "./assets") -> UiPack:
+def default_pack(asset_dir: str = "./pogo_assets/Images") -> UiPack:
     """Return a UiPack with placeholder template names and sensible defaults.
 
     Replace file names with your own captured assets and adjust thresholds as
@@ -359,17 +359,17 @@ def default_pack(asset_dir: str = "./assets") -> UiPack:
     return UiPack(
         asset_dir=asset_dir,
         top_bar=TopBarUI(
-            weather=Locator("weather_icon.png"),
-            compass=Locator("compass_icon.png"),
-            campfire=Locator("campfire_icon.png"),
+            weather=Locator("Weather/weatherIcon_small_sunny.png"),
+            compass=Locator("Menu Icons/CompassIcon.png"),
+            campfire=Locator("Campfire/ic_campfire_map.png"),
             bluetooth=Locator("bluetooth_icon.png"),
             bonuses=Locator("bonuses_icon.png"),
-            rocket_radar=Locator("rocket_radar_icon.png"),
-            daily_incense=Locator("daily_incense_icon.png"),
+            rocket_radar=Locator("Rocket/radar.png"),
+            daily_incense=Locator("Today View/TodayView_Icon_Incense.png"),
             today_view=Locator("today_view_icon.png"),
             nearby=Locator("nearby_icon.png"),
-            main_menu=Locator("main_menu_icon.png"),
-            buddy=Locator("buddy_icon.png"),
+            main_menu=Locator("Menu Icons/btn_pokeball_white_shadow.png"),
+            buddy=Locator("Buddy/ic_buddy.png"),
             trainer=Locator("trainer_icon.png"),
         ),
         weather_menu=WeatherMenuUI(
@@ -406,14 +406,14 @@ def default_pack(asset_dir: str = "./assets") -> UiPack:
             rsvp_button=Locator("rsvp_button.png"),
         ),
         main_menu=MainMenuUI(
-            items=Locator("main_menu_items.png"),
-            pokedex=Locator("main_menu_pokedex.png"),
-            pokemon=Locator("main_menu_pokemon.png"),
-            shop=Locator("main_menu_shop.png"),
-            news=Locator("main_menu_news.png"),
-            battle=Locator("main_menu_battle.png"),
-            settings=Locator("main_menu_settings.png"),
-            tips=Locator("main_menu_tips.png"),
+            items=Locator("Menu Icons/btn_items.png"),
+            pokedex=Locator("Menu Icons/btn_pokedex.png"),
+            pokemon=Locator("Menu Icons/btn_pokemon.png"),
+            shop=Locator("Menu Icons/btn_shop.png"),
+            news=Locator("Menu Icons/btn_news.png"),
+            battle=Locator("Menu Icons/btn_battle.png"),
+            settings=Locator("Menu Icons/btn_settings.png"),
+            tips=Locator("Menu Icons/btn_help.png"),
         ),
         campfire_menu=CampfireMenuUI(
             tab_all=Locator("campfire_tab_all.png"),
@@ -435,9 +435,9 @@ def default_pack(asset_dir: str = "./assets") -> UiPack:
             battle_party=Locator("battle_menu_party.png"),
         ),
         appraise_menu=AppraiseMenuUI(
-            three_bars=Locator("hamburger_icon.png"),
-            appraise_btn=Locator("appraise_button.png"),
-            tag_btn=Locator("tag_button.png"),
+            three_bars=Locator("Menu Icons/btn_action_menu.png"),
+            appraise_btn=Locator("Appraisal/ic_appraise.png"),
+            tag_btn=Locator("Menu Icons/ic_tag.png"),
             tag_three_star=Locator("tag_three_star.png"),
             tag_close=Locator("tag_close.png"),
             three_stars_badge=Locator("three_stars_badge.png", 0.88),
